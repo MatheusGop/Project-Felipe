@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>AniList</title>
 </head>
 
@@ -50,7 +51,7 @@
                     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="hide-on-med-and-down">
                         <li><a href="index.html"><span>Lista de animes</span></a></li>
-                        <li><a href=""><span>Contato</span></a></li>
+                        <li><a href="contato.html"><span>Contato</span></a></li>
                         <li><a href=""><span>Sobre</span></a></li>
                     </ul>
                 </div>
@@ -80,10 +81,11 @@
     <main>
         <div class="container-all">
             <div class="row">
+                <p class="texto-tv">TV</p>
                 <div class="col s12 m12 l4 xl4 col-card-animes">
                     <div class="card horizontal card-anime" data-id="1">
                         <div class="card-image">
-                            <img src="cover/arifureta.jpg">
+                            <a href=""><img src="cover/arifureta.jpg"></a>
                             <div class="back-img">
                                 <span class="text-img">Arifureta: From Commonplace to World's Strongest</span>
                                 <br />
@@ -97,6 +99,7 @@
                             <div class="card-action">
                                 <div class="gender">
                                     <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
                                 </div>
                             </div>
                         </div>
@@ -106,13 +109,21 @@
                     <div class="card horizontal card-anime" data-id="2">
                         <div class="card-image">
                             <img src="cover/isekai.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Isekai Cheat Magician</span>
+                                <br />
+                                <span class="text-blue-back">Encourage Films</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,13 +132,21 @@
                     <div class="card horizontal card-anime" data-id="3">
                         <div class="card-image">
                             <img src="cover/drstone.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Dr. Stone</span>
+                                <br />
+                                <span class="text-blue-back">TMS Entertainment</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Adventure</div>
+                                    <div class="genrer">Sci-Fi</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -138,28 +157,45 @@
                     <div class="card horizontal card-anime" data-id="4">
                         <div class="card-image">
                             <img src="cover/danmachi.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka
+                                    II</span>
+                                <br />
+                                <span class="text-blue-back">J.C. Staff</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m12 l4 xl4 col-card-animes">
-                    <div class="card horizontal card-anime" data-id="5">
+                    <div class="card horizontal card-anime" data-id="6">
                         <div class="card-image">
-                            <img src="cover/fireforce.jpg">
+                            <img src="cover/dororo.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Dororo</span>
+                                <br />
+                                <span class="text-blue-back">MAPPA, Tezuka Productions</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -168,13 +204,21 @@
                     <div class="card horizontal card-anime" data-id="6">
                         <div class="card-image">
                             <img src="cover/kanata.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Kanata no Astra</span>
+                                <br />
+                                <span class="text-blue-back">Lerche</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -184,14 +228,22 @@
                 <div class="col s12 m12 l4 xl4 col-card-animes">
                     <div class="card horizontal card-anime" data-id="7">
                         <div class="card-image">
-                            <img src="cover/sword.jpg">
+                            <img src="cover/Kakegurui ××.png">
+                            <div class="back-img">
+                                <span class="text-img">Kakegurui ××</span>
+                                <br />
+                                <span class="text-blue-back">MAPPA</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,13 +252,21 @@
                     <div class="card horizontal card-anime" data-id="8">
                         <div class="card-image">
                             <img src="cover/vilandsaga.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Viland Saga</span>
+                                <br />
+                                <span class="text-blue-back">Wit Studio</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,13 +275,21 @@
                     <div class="card horizontal card-anime" data-id="9">
                         <div class="card-image">
                             <img src="cover/accelerator.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Toaru Kagaku no Accelerator</span>
+                                <br />
+                                <span class="text-blue-back">J.C. Staff, A.C.G.T.</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -232,13 +300,21 @@
                     <div class="card horizontal card-anime" data-id="7">
                         <div class="card-image">
                             <img src="cover/5-Toubun no Hanayome.jpg">
+                            <div class="back-img">
+                                <span class="text-img">5-Toubun no Hanayome</span>
+                                <br />
+                                <span class="text-blue-back">Tezuka Productions</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -247,13 +323,21 @@
                     <div class="card horizontal card-anime" data-id="8">
                         <div class="card-image">
                             <img src="cover/Domestic na Kanojo.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Domestic na Kanojo</span>
+                                <br />
+                                <span class="text-blue-back">diomedéa</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -262,13 +346,21 @@
                     <div class="card horizontal card-anime" data-id="9">
                         <div class="card-image">
                             <img src="cover/Kono Yo no Hate de Koi o Utau Shoujo YU-NO.jpg">
+                            <div class="back-img">
+                                <span class="text-img">Kono Yo no Hate de Koi o Utau Shoujo YU-NO</span>
+                                <br />
+                                <span class="text-blue-back">feel.</span>
+                            </div>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <div class="gender">
+                                    <div class="genrer">Action</div>
+                                    <div class="genrer">Adventure</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -278,7 +370,7 @@
     </main>
 
     <footer>
-
+        <p class="footer-text">© 2019-2019 P.M. Todos direitos reservados.</p>
     </footer>
 
     <!-- Compiled and minified JavaScript -->
