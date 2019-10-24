@@ -64,8 +64,14 @@ nav:not(.nav-contato) {
 }
 
 nav.nav-contato {
-    background: #2b2d42;
-    color: #fff;
+    background: rgba(22, 28, 38, .5);
+    color: #e5e7ea;
+}
+
+nav.nav-contato:hover {
+    background: #1f2631;
+    color: #cfd5dc;
+    transition-duration: 1s;
 }
 
 nav div.nav-wrapper ul {
@@ -80,6 +86,20 @@ nav div.nav-wrapper a.brand-logo:not(.logo-contato) {
 
 nav div.nav-wrapper a.logo-contato {
     padding-left: 15px;
+}
+
+.content-nav {
+    margin-left: 15%;
+    text-transform: capitalize;
+}
+
+.class-bord {
+    display: inline-flex;
+    border-left: 1px solid hsla(0, 0%, 93.3%, .16);
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 20px;
+    align-items: center;
 }
 
 .img-al {
