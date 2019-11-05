@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $('.sidenav').sidenav();
 
+    $('.collapsible').collapsible();
+
     $(".card-anime").hover(function () {
         var idC = $(this).data("id");
         $('.banner-image').each(function () {
@@ -12,5 +14,5 @@ $(document).ready(function () {
     }, function () {
         $('nav').find(".banner-image").css('opacity', '0')
     });
-    
+
 });

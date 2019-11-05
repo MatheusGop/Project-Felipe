@@ -295,7 +295,7 @@ div.container-all div.row div.col-container-anime {
 }
 
 .row-anime-header {
-    margin-bottom: .5%;
+    margin-bottom: 1% !important;
 }
 
 .col-anime-header {
@@ -346,19 +346,40 @@ div.col-header-info {
     border: 0 !important;
 }
 
+ul.collection li.collection-item.anime-item-rank {
+    padding: 10px;
+    min-height: 55px;
+    align-content: center;
+}
+
+.collapsible-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.div-main {
+    display: none;
+}
+
 .text-info {
     color: #5C7298;
     font-weight: bolder;
 }
 
-.card-anime-image {
+.card-anime-image, .card-anime-image-info {
     height: 140px;
     max-height: 140px;
 }
 
-.card-character-image {
-    height: 120px;
-    max-height: 120px;
+.card-content {
+    height: 140px;
+    max-height: 140px;
+    padding: 8px !important;
+}
+
+.card-character-image, .card-anime-image-character {
+    height: 140px !important;
+    max-height: 140px !important;
 }
 
 .card-anime-recommendation {
@@ -408,6 +429,11 @@ div.container-all div.row div.col-bg-about {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.col-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* Footer */
