@@ -12,4 +12,5 @@ $(document).ready(function () {
     }, function () {
         $('nav').find(".banner-image").css('opacity', '0')
     });
+    
 });

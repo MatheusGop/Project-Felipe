@@ -1,7 +1,7 @@
 body,
 html {
     height: 100%;
-    background: #EDF1F5;
+    background: white;
 }
 
 /* Helper */
@@ -35,7 +35,7 @@ html {
 }
 
 .pb-5_5 {
-    padding-bottom: 5.5%;
+    padding-bottom: 2.5%;
 }
 
 /* .pt-4 {
@@ -54,7 +54,7 @@ html {
 
 /* Nav */
 
-nav:not(.nav-contato) {
+nav.nav-index {
     background: #2b2d42;
     color: #fff;
     height: 233px;
@@ -74,7 +74,7 @@ nav.nav-contato:hover {
     transition-duration: 1s;
 }
 
-nav div.nav-wrapper ul {
+nav.nav-index div.nav-wrapper ul {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -89,16 +89,43 @@ nav div.nav-wrapper a.logo-contato {
 }
 
 .content-nav {
-    margin-left: 15%;
+    width: 100%;
     text-transform: capitalize;
+    justify-content: center !important;
+    display: flex;
 }
 
-.class-bord {
-    display: inline-flex;
-    border-left: 1px solid hsla(0, 0%, 93.3%, .16);
-    height: 30px;
-    margin-left: 20px;
-    padding-left: 20px;
+.nav-li-item a {
+    padding: 0 25px;
+}
+
+.img-logo {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.icon-sidenav {
+    color: rgba(0,0,0,1) !important;
+    font-size: 2em !important;
+    text-align: center;
+}
+
+.button-sidenav {
+    background: rgba(0,0,0,.5) !important;
+    width: 10%;
+    margin-left: 0 !important;
+}
+
+.nav-li-item:hover {
+    background-color: rgba(0,0,0,.2);
+}
+
+.borda {
+    /* display: flex; */
+    border-right: 1px solid hsla(0, 0%, 93.3%, .16);
+    height: 100%;
+    /* margin-left: 20px; */
+    /* padding-left: 20px; */
     align-items: center;
 }
 
@@ -122,7 +149,7 @@ nav div.nav-wrapper a.logo-contato {
     z-index: 0;
 }
 
-main:not(.bg-contato) {
+main.bg-animes:not(.bg-contato) {
     margin-top: -80px;
     position: relative;
     z-index: 60;
@@ -233,8 +260,8 @@ textarea:focus+label {
     color: #747BB6 !important;
 }
 
-input[type="text"]:focus,
-i {
+input[type="text"]:focus
+{
     color: #747BB6 !important;
 }
 
@@ -260,6 +287,113 @@ i {
     margin: 0 0 0 16px;
 }
 
+/* Anime */
+
+div.container-all div.row div.col-container-anime {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row-anime-header {
+    margin-bottom: .5%;
+}
+
+.col-anime-header {
+    position: relative !important;
+}
+
+.div-img-anime-header {
+    width: 100%;
+    margin-top: -100px;
+    box-shadow: 0 0 29px rgba(49,54,68,.25);
+}
+
+div.col-header-info {
+    padding: 1% !important;
+}
+
+.col-anime-info {
+    /* background-color: rgba(1, 1, 1, .5) !important; */
+    /* background-color: red; */
+    background-color: #EDF1F5;
+}
+
+.title-anime-section-info {
+    margin-left: .5%;
+    margin-right: 2%;
+}
+
+.card-anime-info {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cover {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: image;
+}
+
+.content {
+    font-size: 1.2rem;
+    grid-area: content;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.anime-item-info {
+    border: 0 !important;
+}
+
+.text-info {
+    color: #5C7298;
+    font-weight: bolder;
+}
+
+.card-anime-image {
+    height: 140px;
+    max-height: 140px;
+}
+
+.card-character-image {
+    height: 120px;
+    max-height: 120px;
+}
+
+.card-anime-recommendation {
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.title-recommendation {
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+.div-bg-anime {
+    width: 100%;
+    height: 350px;
+    background-image: url('../IMG/bokucover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-add, .btn-icon-favorite {
+    width: 100%;
+}
+
+.collection-tags {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+iframe {
+    width: 100%; 
+    height: 450px;
+}
+
 footer {
     width: 100%;
     background-color: #2b2d42;
@@ -268,4 +402,58 @@ footer {
 .footer-text {
     text-align: center;
     color: white;
+}
+
+/* Teste */
+
+.staff {
+    grid-template-areas: "staff";
+    grid-template-columns: 100%;
+}
+
+.item1 {
+    grid-area: image;
+    background-image: url('../IMG/staff.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item2 { 
+    font-size: 1.2rem;
+    grid-area: content;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.grid-container {
+    height: 80px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.grid-container > .staff {
+    display: inline-grid;
+    grid-template-columns: 60px auto;
+    grid-template-areas: "image content";
+}
+
+.nome {
+    height: 38px;
+}
+
+.role {
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    color: rgb(146, 153, 161);
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
 }
