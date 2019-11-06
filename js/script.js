@@ -75,4 +75,42 @@ $(document).ready(function () {
         }
     });
 
+    $(".owl-anime").owlCarousel({
+        loop: false,
+        touchDrag: true,
+        mouseDrag: true,
+        dots: false,
+        // navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            350: {
+                items: 2,
+                nav: false
+            },
+            550: {
+                items: 2,
+                nav: false
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            800: {
+                items: 4,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: false
+            },
+            1280: {
+                items: 7,
+                nav: false
+            }
+        }
+    });
+
 });
